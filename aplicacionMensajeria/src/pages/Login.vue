@@ -9,7 +9,7 @@
   <div class="container-fluid">
     <div class="row mt-5">
       <div class="div text-center">
-        <button class="btn btn-outline-danger btn-lg">Login con Google</button>
+        <button @click="loginWithGoogle" class="btn btn-outline-danger btn-lg">Login con Google</button>
       </div>
     </div>
 
