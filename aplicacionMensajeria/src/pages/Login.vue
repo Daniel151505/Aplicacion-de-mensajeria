@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="text-center">
 
    <div class="jumbotron bg-primary text-white text-center">
      <h2 class="lead display-3">Aplicación de Mensajeria</h2>
@@ -8,14 +8,14 @@
 
   <div class="container-fluid">
     <div class="row mt-5">
-      <div class="div text-center">
+      <div class="col text-center">
         <button @click="loginWithGoogle" class="btn btn-outline-danger btn-lg">Login con Google</button>
       </div>
     </div>
 
   <div class="row mt-5">
-      <div class="div text-center">
-        <button class="btn btn-outline-danger btn-lg">Login con Twitter</button>
+      <div class="col text-center">
+        <button class="btn btn-outline-info btn-lg">Login con Twitter</button>
       </div>
     </div>
   </div>
