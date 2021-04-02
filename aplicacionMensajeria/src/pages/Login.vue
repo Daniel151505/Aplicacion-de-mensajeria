@@ -31,5 +31,7 @@ export default {
 </script>
 
 <style>
-
+  .btn, .jumbotron{
+    border-radius: 0px;
+  }
 </style>
