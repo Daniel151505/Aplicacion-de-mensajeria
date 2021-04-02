@@ -25,8 +25,12 @@
 
 <script>
 export default {
-  name: 'login'
-
+  name: 'login',
+  methods: {
+    loginWithGoogle(){
+      console.log('login with Google')
+    }
+  }
 }
 </script>
 
