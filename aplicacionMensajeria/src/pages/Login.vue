@@ -28,7 +28,10 @@ export default {
   name: 'login',
   methods: {
     loginWithGoogle(){
-      console.log('login with Google')
+      firebase auth().signInWithPopup(new firebase auth GoogleAuthProvider())
+      .then(function(response){
+        console.log(response.user)
+      })
     }
   }
 }
