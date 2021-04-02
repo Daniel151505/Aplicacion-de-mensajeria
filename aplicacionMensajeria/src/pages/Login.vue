@@ -1,7 +1,7 @@
 <template>
 <div>
 
-   <div class="jumbotron bg-primary text-while">
+   <div class="jumbotron bg-primary text-white text-center">
      <h2 class="lead display-3">Aplicación de Mensajeria</h2>
      <p>Comunicación en tiempo real</p>
   </div>
@@ -28,14 +28,7 @@ import auth from 'firebase/auth'
 
 export default {
   name: 'login',
-  methods: {
-    loginWithGoogle(){
-      firebase auth().signInWithPopup(new firebase auth GoogleAuthProvider())
-      .then((response)=>{
-        console.log(response.user)
-      })
-    }
-  }
+
 }
 </script>
 
