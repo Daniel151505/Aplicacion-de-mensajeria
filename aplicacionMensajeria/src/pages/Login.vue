@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import auth 'firebase/auth'
+
 export default {
   name: 'login',
   methods: {
