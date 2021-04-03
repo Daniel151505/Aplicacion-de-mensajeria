@@ -11,3 +11,9 @@ const state = {
 
 // actualizar los datos del estado a través de mutaciones
 const mutations = {}
+
+
+// obtener datos del estado
+const getters = {
+  currentUser: state => state.currentUser
+}
