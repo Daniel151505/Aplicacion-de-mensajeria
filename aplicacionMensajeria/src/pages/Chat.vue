@@ -1,5 +1,5 @@
  <template>
-
+    <h1>Vista de Chat</h1>
  </template>
 
  <script>
