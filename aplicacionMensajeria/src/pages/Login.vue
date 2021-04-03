@@ -30,8 +30,8 @@ export default {
   methods: {
             loginWithGoogle() {
                 firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider())
-                .then(function(response) {
-                    //console.log(response.user)
+                .then((response) => {
+                    //console.log (response.user)
 
                     // Enviando setUser action
                     this.$store.dispatch('setUser', response.user)
