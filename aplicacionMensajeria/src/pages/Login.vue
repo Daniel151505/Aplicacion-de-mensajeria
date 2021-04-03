@@ -31,7 +31,11 @@ export default {
             loginWithGoogle() {
                 firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider())
                 .then(function(response) {
-                    console.log(response.user)
+                    //console.log(response.user)
+
+                    // Enviando setUser action
+                    this.$store.dispatch('setUser', response.user)
+
                 })
             }
         }
