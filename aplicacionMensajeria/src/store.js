@@ -1,13 +1,12 @@
 import Vue from 'vue'
-import { use } from 'vue/types/umd';
 import Vuex from 'vuex'
 
-Vue.use(Vuex)
+Vue.use(Vuex);
 
-// crear un estado que contenga datos
+// crear un estado que contenga daxtos
 const state = {
   // testing
-  currentUser: 'Daniel'
+  currentUser: null
 };
 
 // actualizar los datos del estado a través de mutaciones
@@ -26,8 +25,8 @@ const getters = {
 //creando actions para mutations con la necesaria data
 
 const actions = {
-  setUser({commit},user){
-      commit('SET_USER', user)
+  setUser(state,user){
+      state.commit('SET_USER', user);
   }
 };
 
