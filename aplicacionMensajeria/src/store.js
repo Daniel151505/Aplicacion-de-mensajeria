@@ -7,13 +7,23 @@ Vue.use(Vuex)
 const state = {
   // testing
   currentUser: 'Daniel'
-}
+};
 
 // actualizar los datos del estado a través de mutaciones
-const mutations = {}
+const mutations = {};
 
 
 // obtener datos del estado
 const getters = {
   currentUser: state => state.currentUser
 }
+
+// creando vuex store
+
+const store = new Vuex.Store({
+  state,
+  mutations,
+  getters
+})
+
+
