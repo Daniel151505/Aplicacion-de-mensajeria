@@ -8,3 +8,6 @@ const state = {
   // testing
   currentUser: 'Daniel'
 }
+
+// actualizar los datos del estado a través de mutaciones
+const mutations = {}
