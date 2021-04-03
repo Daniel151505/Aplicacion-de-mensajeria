@@ -30,7 +30,8 @@ const actions = {
 const store = new Vuex.Store({
   state,
   mutations,
-  getters
+  getters,
+  actions
 })
 
 export default store;
