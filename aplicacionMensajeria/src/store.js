@@ -18,8 +18,15 @@ const getters = {
   currentUser: state => state.currentUser
 }
 
-// creando vuex store
+//creando actions para mutations con la necesaria data
 
+const actions = {
+  setUser({commit},user){
+      commit('SET_USER', user)
+  }
+};
+
+// creando vuex store
 const store = new Vuex.Store({
   state,
   mutations,
