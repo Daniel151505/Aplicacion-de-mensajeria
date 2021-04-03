@@ -36,6 +36,8 @@ export default {
                     // Enviando setUser action
                     this.$store.dispatch('setUser', response.user)
 
+                    // Luego redireccionar user a '/' la pagina
+                    this.$router.push('/')
                 })
             }
         }
