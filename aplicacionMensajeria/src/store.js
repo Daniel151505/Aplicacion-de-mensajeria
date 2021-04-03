@@ -1,4 +1,5 @@
 import Vue from 'vue'
+import { use } from 'vue/types/umd';
 import Vuex from 'vuex'
 
 Vue.use(Vuex)
@@ -10,13 +11,17 @@ const state = {
 };
 
 // actualizar los datos del estado a través de mutaciones
-const mutations = {};
+const mutations = {
+  SET_USER(state,user){
+    state.currentUser = user;
+  }
+};
 
 
 // obtener datos del estado
 const getters = {
   currentUser: state => state.currentUser
-}
+};
 
 //creando actions para mutations con la necesaria data
 
