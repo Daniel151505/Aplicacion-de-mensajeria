@@ -24,10 +24,18 @@
 </template>
 
 <script>
-import auth from 'firebase/auth'
+import auth from 'firebase/auth';
 
 export default {
   name: 'login',
+  methods: {
+            loginWithGoogle() {
+                firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider())
+                .then((resposnse) => {
+                    console.log(response.user)
+                })
+            }
+        }
 
 }
 </script>
