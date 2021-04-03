@@ -25,18 +25,16 @@
 
 <script>
 import auth from 'firebase/auth';
-
 export default {
   name: 'login',
   methods: {
             loginWithGoogle() {
                 firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider())
-                .then((resposnse) => {
+                .then(function(response) {
                     console.log(response.user)
                 })
             }
         }
-
 }
 </script>
 
