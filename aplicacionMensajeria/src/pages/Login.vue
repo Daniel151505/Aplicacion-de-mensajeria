@@ -12,7 +12,7 @@
 
   <!-- Mostrando errores -->
   <div class="alert alert-danger" v-if="hasErrors">
-    <div v-for="(error,index) in errors" :key="index">{‌{ error }}</div>
+    <div v-for="(error,index) in errors" :key="index">{‌{error}}</div>
   </div>
 
   <div class="container-fluid">
@@ -44,7 +44,7 @@ export default {
   },
   computed: {
     hasErrors() {
-      return this.error.lenght > 0
+      return this.errors.length > 0
     }
   },
   methods: {
