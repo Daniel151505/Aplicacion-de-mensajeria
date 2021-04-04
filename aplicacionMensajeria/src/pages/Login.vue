@@ -45,7 +45,9 @@ export default {
                     // Luego redireccionar user a '/' la pagina
                     this.$router.push('/')
                 })
-
+                 .catch(error => {
+                  this.errors.push(error.message)
+                })
             }
         }
 }
