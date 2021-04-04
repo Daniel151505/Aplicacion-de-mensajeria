@@ -50,6 +50,9 @@ export default {
                 })
                  .catch(error => {
                   this.errors.push(error.message)
+
+                  //set loading to false
+                  this.loading = false
                 })
             }
         }
