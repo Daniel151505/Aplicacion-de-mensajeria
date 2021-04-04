@@ -6,6 +6,10 @@
      <p>Comunicación en tiempo real</p>
   </div>
 
+  <!-- Show loading statue -->
+
+  <div class="alert alert-info" v-if="loading">Procesando...</div>
+
   <div class="container-fluid">
     <div class="row mt-5">
       <div class="col text-center">
