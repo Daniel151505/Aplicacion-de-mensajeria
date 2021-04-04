@@ -27,6 +27,12 @@
 import auth from 'firebase/auth';
 export default {
   name: 'login',
+  data() {
+    return {
+      errors: [],
+      loading: false
+    }
+  },
   methods: {
             loginWithGoogle() {
                 firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider())
@@ -39,6 +45,7 @@ export default {
                     // Luego redireccionar user a '/' la pagina
                     this.$router.push('/')
                 })
+
             }
         }
 }
