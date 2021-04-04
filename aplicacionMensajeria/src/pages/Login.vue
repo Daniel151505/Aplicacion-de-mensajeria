@@ -37,6 +37,11 @@ export default {
       loading: false
     }
   },
+  computed: {
+    hasError() {
+      return this.error.lenght > 0
+    }
+  },
   methods: {
             loginWithGoogle() {
               // loading set to true
