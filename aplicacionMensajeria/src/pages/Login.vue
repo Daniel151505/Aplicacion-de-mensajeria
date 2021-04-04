@@ -43,7 +43,7 @@ export default {
     }
   },
   computed: {
-    hasError() {
+    hasErrors() {
       return this.error.lenght > 0
     }
   },
