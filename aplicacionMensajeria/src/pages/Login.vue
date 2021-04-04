@@ -10,6 +10,11 @@
 
   <div class="alert alert-info" v-if="loading">Procesando...</div>
 
+  <!-- Mostrando errores -->
+  <div class="alert alert-danger" v-if="hasErrors">
+    <div v-for="(error,index) in errors" :key="index">{‌{ error }}</div>
+  </div>
+
   <div class="container-fluid">
     <div class="row mt-5">
       <div class="col text-center">
