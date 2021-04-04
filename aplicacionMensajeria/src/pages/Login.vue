@@ -35,6 +35,9 @@ export default {
   },
   methods: {
             loginWithGoogle() {
+              // loading set to true
+                this.loading = true
+
                 firebase.auth().signInWithPopup(new firebase.auth.GoogleAuthProvider())
                 .then((response) => {
                     //console.log (response.user)
